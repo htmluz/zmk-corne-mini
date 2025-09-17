@@ -20,8 +20,22 @@
         cedilha: cedilha {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp C>;
+            bindings = <&kp RA(COMMA)>;
             label = "CEDILHA";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 15>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
         };
     };
 
@@ -72,9 +86,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL       &kp AT     &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp CARET  &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
-&none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp LBKT   &kp RBKT               &kp TILDE      &none
-&none  &none          &cedilha   &none           &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH  &kp RBRC               &kp QUESTION   &none
+&none  &kp EXCL       &kp AT     &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp CARET    &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
+&none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp RA(SQT)  &kp RBKT               &kp TILDE      &none
+&none  &none          &cedilha   &none           &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH    &kp RBRC               &kp QUESTION   &none
                                  &trans          &trans     &trans       &trans             &trans                &trans
             >;
         };
