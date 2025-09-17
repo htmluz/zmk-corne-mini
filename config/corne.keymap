@@ -37,6 +37,11 @@
             bindings = <&kp ESC>;
             key-positions = <1 2>;
         };
+
+        layer3 {
+            bindings = <&mo 3>;
+            key-positions = <37 40>;
+        };
     };
 
     keymap {
@@ -69,7 +74,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp PRINTSCREEN  &kp N2        &kp N3        &kp N4        &kp N5          &none     &kp LEFT_PARENTHESIS  &kp HOME  &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
+&none  &kp PRINTSCREEN  &kp MINUS     &kp PLUS      &kp EQUAL     &kp N5          &none     &kp LEFT_PARENTHESIS  &kp HOME  &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
 &none  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LEFT  &kp DOWN              &kp UP    &kp RIGHT              &none          &none
 &none  &kp NUMBER_6     &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none     &kp DEL               &none     &none                  &none          &none
                                       &trans        &trans        &trans          &trans    &trans                &trans
@@ -87,17 +92,17 @@
 
             bindings = <
 &none  &kp EXCL       &kp AT     &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp CARET    &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
-&none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp RA(SQT)  &kp RBKT               &kp TILDE      &none
-&none  &none          &cedilha   &none           &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH    &kp RBRC               &kp QUESTION   &none
+&none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp RA(SQT)  &kp RBKT               &kp RA(TILDE)  &none
+&none  &none          &none      &cedilha        &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH    &kp RBRC               &kp QUESTION   &none
                                  &trans          &trans     &trans       &trans             &trans                &trans
             >;
         };
 
         mouse {
             bindings = <
-&none  &none  &mkp RCLK       &mmv MOVE_UP    &mkp MB1         &msc SCRL_UP      &none   &none   &none   &none  &none  &none
-&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &none   &none   &none   &none  &none  &none
-&none  &none  &none           &mkp MCLK       &kp LS(INSERT)   &none             &none   &zzz    &none   &none  &none  &none
+&none  &none  &mkp RCLK       &mmv MOVE_UP    &mkp MB1         &msc SCRL_UP      &none   &none   &none   &none  &kp BACKSPACE  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &none   &none   &none   &none  &none          &none
+&none  &none  &none           &mkp MCLK       &kp LS(INSERT)   &none             &none   &zzz    &none   &none  &none          &none
                               &trans          &trans           &trans            &trans  &trans  &trans
             >;
         };
