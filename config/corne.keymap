@@ -16,6 +16,13 @@
             bindings = <&none &kp LS(N) &kp N0 &kp N0 &kp F &kp N3 &kp R &kp N1 &kp N3 &kp N2 &kp EXCL>;
             label = "ZZZ";
         };
+
+        cedilha: cedilha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C>;
+            label = "CEDILHA";
+        };
     };
 
     keymap {
@@ -67,7 +74,7 @@
             bindings = <
 &none  &kp EXCL       &kp AT     &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp CARET  &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
 &none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp LBKT   &kp RBKT               &kp TILDE      &none
-&none  &none          &kp LCTRL  &none           &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH  &kp RBRC               &kp QUESTION   &none
+&none  &none          &cedilha   &none           &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH  &kp RBRC               &kp QUESTION   &none
                                  &trans          &trans     &trans       &trans             &trans                &trans
             >;
         };
