@@ -16,13 +16,6 @@
             bindings = <&none &kp LS(N) &kp N0 &kp N0 &kp F &kp N3 &kp R &kp N1 &kp N3 &kp N2 &kp EXCL>;
             label = "ZZZ";
         };
-
-        cedilha: cedilha {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(COMMA)>;
-            label = "CEDILHA";
-        };
     };
 
     combos {
@@ -72,7 +65,7 @@
 &none  &kp PRINTSCREEN  &kp MINUS     &kp PLUS      &kp EQUAL     &kp COMMA       &none     &kp LEFT_PARENTHESIS  &kp HOME   &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
 &none  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LEFT  &kp DOWN              &kp UP     &kp RIGHT              &none          &none
 &none  &kp NUMBER_6     &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &none     &kp DEL               &kp SLASH  &kp PERIOD             &none          &none
-                                      &trans        &trans        &trans          &trans    &mo 2                 &trans
+                                      &trans        &trans        &trans          &trans    &mo 3                 &trans
             >;
         };
 
@@ -86,10 +79,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL       &kp AT     &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp CARET    &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
-&none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp RA(SQT)  &kp RBKT               &kp RA(TILDE)  &none
-&none  &none          &none      &cedilha        &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH    &kp RBRC               &kp QUESTION   &none
-                                 &trans          &mo 1      &trans       &trans             &trans                &trans
+&none  &kp EXCL       &kp AT     &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RA(CARET)  &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
+&none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp RA(SQT)    &kp RBKT               &kp RA(TILDE)  &none
+&none  &none          &none      &kp RA(COMMA)   &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH      &kp RBRC               &kp QUESTION   &none
+                                 &trans          &mo 3      &trans       &trans             &trans                &trans
             >;
         };
 
