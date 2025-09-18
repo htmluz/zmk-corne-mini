@@ -83,19 +83,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL       &kp AT     &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RA(NUMBER_6)  &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
-&none  &kp AMPERSAND  &kp ASTRK  &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp RA(SQT)       &kp RBKT               &kp RA(TILDE)  &none
-&none  &none          &none      &kp RA(COMMA)   &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH         &kp RBRC               &kp QUESTION   &none
-                                 &trans          &trans     &trans       &trans             &trans                &trans
+&none  &kp EXCL       &kp AT         &kp HASH        &kp DLLR   &kp PRCNT    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RA(NUMBER_6)  &kp RIGHT_PARENTHESIS  &kp BACKSPACE  &none
+&none  &kp AMPERSAND  &kp ASTRK      &kp UNDERSCORE  &kp COLON  &kp SEMI     &kp SQT            &kp LEFT_BRACKET      &kp RA(SQT)       &kp RBKT               &kp RA(TILDE)  &none
+&none  &kp PIPE       &kp BACKSLASH  &kp RA(COMMA)   &kp MINUS  &none        &kp GRAVE          &kp LEFT_BRACE        &kp SLASH         &kp RBRC               &kp QUESTION   &none
+                                     &trans          &trans     &trans       &trans             &trans                &trans
             >;
         };
 
         mouse {
             bindings = <
-&none  &none  &mkp RCLK       &mmv MOVE_UP    &mkp MB1         &msc SCRL_UP      &none   &none   &none   &none  &kp BACKSPACE  &none
-&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &none   &none   &none   &none  &none          &none
-&none  &none  &none           &mkp MCLK       &kp LS(INSERT)   &none             &none   &zzz    &none   &none  &none          &none
-                              &trans          &trans           &trans            &trans  &trans  &trans
+&none  &none  &mkp RCLK       &mmv MOVE_UP    &mkp MB1         &msc SCRL_UP      &none   &none           &none             &none       &kp BACKSPACE  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &none   &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &none          &none
+&none  &none  &none           &mkp MCLK       &kp LS(INSERT)   &none             &none   &zzz            &none             &none       &none          &none
+                              &trans          &trans           &trans            &trans  &trans          &trans
             >;
 
             label = "Mouse Layer";
